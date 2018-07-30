@@ -68,6 +68,7 @@
   }
 
   function handleTouchMove(evt) {
+    e.preventDefault();
     if (!yDown) return;
     if (evt.touches.length > 1) return;
 
@@ -93,6 +94,7 @@
   }
 
   function handleMouseWheel(evt) {
+    e.preventDefault();
     var direction = evt.deltaY > 0 ? "up" : "down";
 
     if (direction === "up") {
