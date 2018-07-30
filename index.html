@@ -13,18 +13,18 @@
   <div class="container">
     <article class="slider">
       <section class="slider__item slider__item--active ">
-        <img class="slider__" src="./images/DT-00.svg" alt="" style="
-          height: 100%;
-          width: 70%;
-          position: absolute;
-          left: 0;
-          object-fit: fill;
-        ">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="./images/DT-00.svg">
+          <source media="(min-width: 768px)" srcset="./images/Tablet-P-00.svg">
+            <img class="slider__opening-shape" src="./images/M-00.svg" alt="">
+        </picture>
+
         <picture>
           <source media="(min-width: 1024px)" srcset="./images/DT-00.jpg">
           <source media="(min-width: 768px)" srcset="./images/Tablet-P-00.jpg">
           <img class="slider__background-image" src="./images/M-00.jpg" alt="Man smiles">
         </picture>
+        
         <div class="slider__opening-text">
           <img src="images/Logo.svg" alt="Site logo" width="165" height="25">
           <h1 class="slider__item-title">
@@ -68,7 +68,7 @@
         <a href="#" class="slider__item-cta">Got it! Lets Talk :)</a>
       </section>
 
-      <section class="slider__item slider__item-tablet--background-gradient">
+      <section class="slider__item">
         <div class="slider__side-buttons">
           <button class="slider__control-button slider__control-button--prev">Previous slide</button>
           <a class="slider__side-cta" href="#">Get in touch</a>
@@ -78,7 +78,7 @@
         <picture>
           <source media="(min-width: 1024px)" srcset="./images/DT-02.jpg">
           <source media="(min-width: 768px)" srcset="./images/Tablet-P-02.jpg">
-          <img class="slider__background-image slider__background-image--tablet-width-half" src="./images/M-02.jpg" alt="">
+          <img class="slider__background-image slider__background-image--tablet-width-half slider__background-image--desktop-align-left" src="./images/M-02.jpg" alt="">
         </picture>
 
         <div class="slider__top-tip slider__top-tip--tablet-color-gray">
@@ -88,13 +88,15 @@
           </p>
         </div>
 
-        <div class="slider__reason slider__reason--tablet-width-half">
-          <div class="slider__reason-number">02</div>
-          <p class="slider__reason-text slider__reason-text--background-gradient">
-            <span class="slider__reason-text--big">87% of
-              <br>consumers</span>
-            <br> conduct research every single time&nbsp;they&nbsp;make&nbsp;a purchase.
-          </p>
+        <div class="slider__text-wrapper">
+          <div class="slider__reason slider__reason--tablet-width-half">
+            <div class="slider__reason-number">02</div>
+            <p class="slider__reason-text slider__reason-text--background-gradient">
+              <span class="slider__reason-text--big">87% of
+                <br>consumers</span>
+              <br> conduct research every single time&nbsp;they&nbsp;make&nbsp;a purchase.
+            </p>
+          </div>
         </div>
 
         <a href="#" class="slider__item-cta">Got it! Lets Talk :)</a>
@@ -106,11 +108,13 @@
           <a class="slider__side-cta" href="#">Get in touch</a>
           <button class="slider__control-button slider__control-button--next">Next slide</button>
         </div>
+
         <picture>
           <source media="(min-width: 1024px)" srcset="./images/DT-03.jpg">
           <source media="(min-width: 768px)" srcset="./images/Tablet-P-03.jpg">
           <img class="slider__background-image" src="./images/M-03.jpg" alt="">
         </picture>
+
         <div class="slider__top-tip">
           <div class="slider__horizontal-line"></div>
           <p class="slider__tip-text">
@@ -137,6 +141,7 @@
           <a class="slider__side-cta" href="#">Get in touch</a>
           <button class="slider__control-button slider__control-button--next">Next slide</button>
         </div>
+        
         <div class="slider__top-tip">
           <div class="slider__horizontal-line"></div>
           <p class="slider__tip-text">
@@ -181,7 +186,7 @@
         <div class="slider__reason slider__reason--desktop-width-half">
           <div class="slider__reason-number slider__reason-number--gradient">05</div>
           <p class="slider__reason-text slider__reason-text--black slider__reason-text--background-white">
-            Top10 customers convert to
+            Top10 customers<br>convert to
             <br>
             <span class="slider__reason-text--big">high quality
               <br>leads.</span>
@@ -197,12 +202,14 @@
           <a class="slider__side-cta" href="#">Get in touch</a>
           <button class="slider__control-button slider__control-button--next">Next slide</button>
         </div>
+
         <picture>
           <source media="(min-width: 1024px)" srcset="./images/DT-06.jpg">
           <source media="(min-width: 768px)" srcset="./images/Tablet-P-06.jpg">
           <img class="slider__background-image slider__background-image--tablet-height-half slider__background-image--desktop-half-width"
             src="./images/M-06.jpg" alt="">
         </picture>
+
         <div class="slider__top-tip slider__top-tip--desktop-color-gray">
           <div class="slider__horizontal-line"></div>
           <p class="slider__tip-text">
@@ -222,7 +229,7 @@
         <a href="#" class="slider__item-cta">Got it! Lets Talk :)</a>
       </section>
 
-      <section class="slider__item slider__item-tablet--background-gradient">
+      <section class="slider__item">
         <div class="slider__side-buttons">
           <button class="slider__control-button slider__control-button--prev">Previous slide</button>
           <a class="slider__side-cta" href="#">Get in touch</a>
@@ -232,7 +239,7 @@
         <picture>
           <source media="(min-width: 1024px)" srcset="./images/DT-07.jpg">
           <source media="(min-width: 768px)" srcset="./images/Tablet-P-07.jpg">
-          <img class="slider__background-image slider__background-image--mob-height-half slider__background-image--tablet-width-half"
+          <img class="slider__background-image slider__background-image--mob-height-half slider__background-image--tablet-width-half slider__background-image--desktop-align-left"
             src="./images/M-07.jpg" alt="">
         </picture>
 
@@ -243,13 +250,15 @@
           </p>
         </div>
 
-        <div class="slider__reason slider__reason--tablet-width-half">
-          <div class="slider__reason-number slider__reason-number--gradient slider__reason-number--tablet-white">07</div>
-          <p class="slider__reason-text slider__reason-text--black slider__reason-text--background-white slider__reason-text--tablet-color-white slider__reason-text--tablet-no-background">
-            <span class="slider__reason-text--big">Tell your
-              <br>story</span>
-            <br> on a trusted third-party website.
-          </p>
+        <div class="slider__text-wrapper">
+          <div class="slider__reason slider__reason--tablet-width-half">
+            <div class="slider__reason-number slider__reason-number--gradient slider__reason-number--tablet-white">07</div>
+            <p class="slider__reason-text slider__reason-text--black slider__reason-text--background-white slider__reason-text--tablet-color-white slider__reason-text--tablet-no-background">
+              <span class="slider__reason-text--big">Tell your
+                <br>story</span>
+              <br> on a trusted third-party website.
+            </p>
+          </div>
         </div>
 
         <a href="#" class="slider__item-cta">Got it! Lets Talk :)</a>
@@ -261,11 +270,13 @@
           <a class="slider__side-cta" href="#">Get in touch</a>
           <button class="slider__control-button slider__control-button--next">Next slide</button>
         </div>
+
         <picture>
           <source media="(min-width: 1024px)" srcset="./images/DT-08.jpg">
           <source media="(min-width: 768px)" srcset="./images/Tablet-P-08.jpg">
           <img class="slider__background-image slider__background-image--tablet-height-half slider__background-image--desktop-half-width" src="./images/M-08.jpg" alt="">
         </picture>
+
         <div class="slider__top-tip slider__top-tip--desktop-color-gray">
           <div class="slider__horizontal-line"></div>
           <p class="slider__tip-text">
@@ -292,12 +303,14 @@
           <a class="slider__side-cta" href="#">Get in touch</a>
           <button class="slider__control-button slider__control-button--next">Next slide</button>
         </div>
+
         <picture>
           <source media="(min-width: 1024px)" srcset="./images/DT-09.jpg">
           <source media="(min-width: 768px)" srcset="./images/Tablet-P-09.jpg">
           <img class="slider__background-image slider__background-image--mob-height-half slider__background-image--tablet-fixed-size slider__background-image--desktop-align-left"
             src="./images/M-09.jpg" alt="">
         </picture>
+
         <div class="slider__top-tip slider__top-tip--tablet-color-gray">
           <div class="slider__horizontal-line"></div>
           <p class="slider__tip-text">
@@ -325,11 +338,13 @@
           <a class="slider__side-cta" href="#">Get in touch</a>
           <button class="slider__control-button slider__control-button--next">Next slide</button>
         </div>
+
         <picture>
           <source media="(min-width: 1024px)" srcset="./images/DT-10.jpg">
           <source media="(min-width: 768px)" srcset="./images/Tablet-P-10.jpg">
           <img class="slider__background-image" src="./images/M-10.jpg" alt="">
         </picture>
+
         <div class="slider__top-tip slider__top-tip--tablet-color-gray">
           <div class="slider__horizontal-line"></div>
           <p class="slider__tip-text">
@@ -350,18 +365,19 @@
       </section>
 
       <section class="slider__item">
-        <img class="slider__" src="./images/DT-11.svg" alt="" style="
-          height: 100%;
-          width: 70%;
-          position: absolute;
-          right: 0;
-          object-fit: fill;
-        ">
+        <picture>
+          <source>
+          <source media="(min-width: 1024px)" srcset="./images/DT-11.svg">
+          <source media="(min-width: 768px)" srcset="./images/Tablet-P-11.svg">
+          <img class="slider__closing-shape" src="./images/M-11.svg" alt="">
+        </picture>
+
         <picture>
           <source media="(min-width: 1024px)" srcset="./images/DT-11.jpg">
           <source media="(min-width: 768px)" srcset="./images/Tablet-P-11.jpg">
           <img class="slider__background-image" src="./images/M-11.jpg" alt="">
         </picture>
+
         <p class="slider__closing-text">
           Ready to get listed?
           <span class="slider__reason-text--big">Let's talk!</span>

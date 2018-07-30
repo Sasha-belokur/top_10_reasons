@@ -24,11 +24,10 @@
   };
 
   function handleDocumentClick(evt) {
-    var isCtaButton = evt.target.matches(".slider__item-cta");
     var isNextButton = evt.target.matches(".slider__control-button--next");
     var isPrevButton = evt.target.matches(".slider__control-button--prev");
 
-    if (isCtaButton || isNextButton) {
+    if (isNextButton) {
       showNextSlide();
     } else if (isPrevButton) {
       showPrevSlide();
@@ -41,10 +40,8 @@
 
     if (!nextSlide) return;
     nextSlide.classList.add("slider__item--active");
-
-    setTimeout(() => {
-      currentSlide.classList.remove("slider__item--active");
-    }, 500);
+    currentSlide.classList.add("slider__item--move-top");
+    currentSlide.classList.remove("slider__item--active");
 
     if (!nextSlide.nextElementSibling) {
       // document.removeEventListener("click", handleDocumentClick);
@@ -60,13 +57,9 @@
     var prevSlide = currentSlide.previousElementSibling;
 
     if (!prevSlide) return;
+    prevSlide.classList.remove("slider__item--move-top");
     prevSlide.classList.add("slider__item--active");
-    prevSlide.style.transition = "none";
     currentSlide.classList.remove("slider__item--active");
-
-    setTimeout(() => {
-      prevSlide.style.transition = "";
-    }, 500);
   }
 
   function handleTouchStart(evt) {
@@ -75,9 +68,8 @@
   }
 
   function handleTouchMove(evt) {
-    if (!yDown) {
-      return;
-    }
+    if (!yDown) return;
+    if (evt.touches.length > 1) return;
 
     var yUp = evt.touches[0].clientY;
 
