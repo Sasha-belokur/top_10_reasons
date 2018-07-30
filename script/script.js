@@ -59,7 +59,12 @@
     if (!prevSlide) return;
     prevSlide.classList.remove("slider__item--move-top");
     prevSlide.classList.add("slider__item--active");
+    currentSlide.style.transitionDelay = "0.1s";
     currentSlide.classList.remove("slider__item--active");
+
+    setTimeout(function() {
+      currentSlide.style.transitionDelay = "";
+    }, 1000);
   }
 
   function handleTouchStart(evt) {
