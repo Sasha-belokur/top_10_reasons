@@ -1,8 +1,9 @@
 (function() {
   var yDown = null;
+  var xDown = null;
   var arrow = document.querySelector(".white-arrow");
 
-  var throttle = (func, limit) => {
+  var throttle = function(func, limit) {
     var lastFunc;
     var lastRan;
     return function() {
@@ -13,12 +14,12 @@
         lastRan = Date.now();
       } else {
         clearTimeout(lastFunc);
-        lastFunc = setTimeout(function() {
-          if (Date.now() - lastRan >= limit) {
+        if (Date.now() - lastRan >= limit) {
+          lastFunc = setTimeout(function() {
             func.apply(context, args);
             lastRan = Date.now();
-          }
-        }, limit - (Date.now() - lastRan));
+          }, limit - (Date.now() - lastRan));
+        }
       }
     };
   };
@@ -76,9 +77,13 @@
     if (!yDown) return;
     if (evt.touches.length > 1) return;
 
+    var xUp = evt.touches[0].clientX;
     var yUp = evt.touches[0].clientY;
 
     var yDiff = yDown - yUp;
+    var xDiff = xDown - xUp;
+
+    if (Math.abs(xDiff) > 10) return;
 
     if (yDiff > 0) {
       showNextSlide();
