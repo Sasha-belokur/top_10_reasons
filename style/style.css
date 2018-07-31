@@ -173,6 +173,10 @@ img {
   color: #f7941d;
 }
 
+.slider__reason-number--letter-spacing-low {
+  letter-spacing: -7px;
+}
+
 .slider__reason-text {
   height: 300px;
   margin-top: 0;
@@ -208,7 +212,7 @@ img {
 
 .slider__reason-text--big {
   display: inline-block;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
   font-family: "Roboto Condensed";
   font-size: 42px;
   font-weight: 700;
@@ -327,6 +331,10 @@ img {
 
   .slider__reason {
     top: 55%;
+  }
+
+  .slider__reason--mob-pos-bot {
+    top: 70%;
   }
 
   .slider__reason--tablet-color-black {
@@ -608,6 +616,10 @@ img {
   .slider__reason--desktop-pos-middle {
     top: 25%;
     left: 50%;
+  }
+
+  .slider__reason--desktop-pos-bot {
+    top: 60%;
   }
 
   .slider__reason--desktop-width-half {

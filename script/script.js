@@ -44,11 +44,11 @@
     currentSlide.classList.remove("slider__item--active");
 
     if (!nextSlide.nextElementSibling) {
-      // document.removeEventListener("click", handleDocumentClick);
-      // document.removeEventListener("touchstart", handleTouchStart);
-      // document.removeEventListener("touchmove", handleTouchMove);
-      // document.removeEventListener("keydown", handleKeyDown);
-      // document.removeEventListener("wheel", handleMouseWheel);
+      document.removeEventListener("click", handleDocumentClick);
+      document.removeEventListener("touchstart", handleTouchStart);
+      document.removeEventListener("touchmove", handleTouchMove);
+      document.removeEventListener("keydown", handleKeyDown);
+      document.removeEventListener("wheel", handleMouseWheel);
     }
   }
 
