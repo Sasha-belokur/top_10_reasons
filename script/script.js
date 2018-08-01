@@ -92,6 +92,7 @@
     }
 
     yDown = null;
+    xDown = null;
   }
 
   function handleKeyDown(evt) {
