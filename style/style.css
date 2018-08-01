@@ -350,7 +350,7 @@ img {
   border-bottom-color: #000000;
 }
 
-@media (max-height: 510px) {
+@media (max-height: 570px) {
   .slider__reason {
     top: 30%;
   }
