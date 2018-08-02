@@ -172,7 +172,7 @@ img {
 }
 
 .slider__reason--mob-pos-bot {
-  top: 60%;
+  top: 50%;
 }
 
 .slider__reason-number {
@@ -195,7 +195,7 @@ img {
 }
 
 .slider__reason-number--letter-spacing-low {
-  letter-spacing: -7px;
+  letter-spacing: -5px;
 }
 
 .slider__reason-text {
